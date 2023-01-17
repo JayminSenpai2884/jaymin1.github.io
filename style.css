@@ -41,7 +41,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
+    height: 100px;
     display: flex;
     align-items: center;
 }
@@ -68,12 +68,12 @@ main .part1 h2 {
 main .part1 .bg2 {
     float: right;
     padding: 65px;
-    width: 904px;
+    width: 800px;
 }
 
 .skill {
     float: left;
-    padding: 330px 0px 0px 100px;
+    padding: 40px 0px 0px 100px;
 
 }
 .skill p{
