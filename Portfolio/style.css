@@ -1,0 +1,381 @@
+/* navbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.logo {
+    width: 110px;
+
+}
+
+body {
+    height: 125vh;
+    background-image: linear-gradient(to left, #f2ffb3, #b8f8be, #80ecd2, #54dce7, #54c8f2, #5ac5f5, #61c2f7, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 110px;
+    padding: 30px;
+}
+
+nav ul {
+    word-spacing: 20px;
+}
+
+
+
+header li a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #ffffdd;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+.navbtn a {
+    font-size: 18px;
+    color: black;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 450ms;
+    transition-property: color;
+}
+
+.navbtn a:focus,
+.navbtn a:hover {
+    color: skyblue;
+}
+
+.navbtn a:focus:after,
+.navbtn a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.navbtn a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: skyblue;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+/* main body */
+
+.aniText{
+    animation: color 5s infinite alternate ease-in-out;
+    -webkit-text-stroke: 5px black;
+}
+@keyframes color{
+    0%{
+        color:  #85FFBD ;
+
+       
+    }100%{
+        color: #FFFB7D;
+    }
+}
+
+main .part1 h2 {
+    float: left;
+    font-size: 120px;
+    color: black;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+main .part1 .bg2 {
+    float: right;
+    padding: 65px;
+    width: 620px;
+}
+
+.bg2 {
+    margin-top: 110px;
+    margin-right: 80px;
+    width: 190px;
+    height: 254px;
+    background-color: #ffffff;
+background-image: linear-gradient(0deg, #ffffff 0%, #B5FFFC 100%);
+
+    border: 3px solid #000;
+    border-radius: 10px;
+    transition: 450ms;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+}
+.linkedin , .instagram{
+    width: 100px;
+    display: flex;
+    margin: 0px auto;
+}
+.linkedin:hover{
+    cursor: pointer;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    
+}
+
+.bg2:hover {
+    box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
+}
+
+.skill {
+    float: left;
+    padding: 40px 0px 0px 100px;
+
+}
+
+.skill p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 100px;
+}
+
+#progressbar {
+    width: 900px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+#progressbar>div {
+    background-color: orange;
+    width: 95%;
+
+    height: 20px;
+    border-radius: 10px;
+}
+
+#progressbar1 {
+    width: 900px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+#progressbar1>div {
+    background-color: orange;
+    width: 85%;
+
+    height: 20px;
+    border-radius: 10px;
+}
+
+#progressbar2 {
+    width: 900px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+#progressbar2>div {
+    background-color: orange;
+    width: 25%;
+
+    height: 20px;
+    border-radius: 10px;
+}
+
+#progressbar3 {
+    width: 900px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+#progressbar3>div {
+    background-color: orange;
+    width: 20%;
+
+    height: 20px;
+    border-radius: 10px;
+}
+
+#progressbar4 {
+    width: 900px;
+    background-color: black;
+    border-radius: 13px;
+    padding: 3px;
+}
+
+#progressbar4>div {
+    background-color: orange;
+    width: 3%;
+
+    height: 20px;
+    border-radius: 10px;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    float: right;
+
+}
+
+.icons img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+.effect {
+    box-sizing: border-box;
+    width: 610px;
+    padding: 20px 0px 20px 0px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    margin-top: 115px;
+    float: right;
+    margin-right: 100px;
+}
+
+.effect:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.effect:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+#Learnings {
+    clear: both;
+    padding: 20px;
+}
+
+.Learnings {
+    padding: 60px;
+    padding-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.grid div {
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+/* form input,*/
+
+
+.input,.inputPH {
+    width: 98%;
+    padding: 15px;
+    color: black;
+    margin: 15px 0;
+    font-weight: 500;
+    font-size: 14px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px;
+  }
+  
+  .inputPH{
+    height: 100px;
+        font-family: inherit;
+      
+  }
+
+  .inputPH:hover, .input:hover{
+    border: 1.5px solid #0059ff;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+  }
+
+.btn {
+    display: inline-block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn {
+    border-radius: 999px;
+    padding: 1em 2em;
+    background: linear-gradient(117deg, rgb(254, 145, 80), rgb(254, 100, 70));
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease 0s;
+    letter-spacing: 0.08rem;
+   }
+   
+   .btn:hover,
+   .btn:focus {
+    background: linear-gradient(117deg, rgb(248, 137, 73), rgb(248, 82, 49));
+    box-shadow: 0 0.1rem 0.8rem rgb(254, 100, 70);
+   }
+
+#contact {
+    padding: 80px;
+}
